@@ -1,0 +1,15 @@
+<!-- ================= Content Child ================= -->
+<app-content-child>
+  <ul class="list" #myList>
+    @for (fruit of fruits; track fruit) {
+      <li>{{ fruit }}</li>
+    }
+  </ul>
+</app-content-child>
+
+<!-- ================= Content Children ================= -->
+<app-content-children>
+  <p>Card Item</p>
+  <p>Card Item</p>
+  <p>Card Item</p>
+</app-content-children>

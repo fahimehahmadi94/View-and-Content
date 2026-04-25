@@ -1,0 +1,36 @@
+.app-container {
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+}
+
+.top-nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.top-nav button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.top-nav button.active {
+  background: white;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.content {
+  padding: 24px;
+  margin: 16px;
+}

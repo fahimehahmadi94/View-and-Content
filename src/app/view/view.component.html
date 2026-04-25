@@ -1,0 +1,20 @@
+<!-- ================= View Child ================= -->
+<app-view-child>
+  <div class="listBtn">
+    <button (click)="toggleChildColor()">
+      Change Child Title Color
+    </button>
+    <button (click)="resetCounter()" class="btn-danger">
+      Reset From Parent
+    </button>
+    <button (click)="increaseCounter()" class="btn-success">
+      +
+    </button>
+  </div>
+</app-view-child>
+<!-- ================= View Children ================= -->
+@for (item of items; track item.name) {
+  <app-view-children [name]="item.name"></app-view-children>
+}
+
+<button (click)="toggleItems()">Show 0r Hidden</button>

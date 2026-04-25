@@ -1,0 +1,9 @@
+<div class="card">
+  <button (click)="toggle()">Show List</button>
+
+  @if (show) {
+    <div>
+      <ng-content></ng-content>
+    </div>
+  }
+</div>
